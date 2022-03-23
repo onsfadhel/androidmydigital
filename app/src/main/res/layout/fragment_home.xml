@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@color/yellow"
+                android:backgroundTint="@color/yellow"
+                android:src="@drawable/menu" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gopizza"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageViewpizza"
+                            android:layout_width="75dp"
+                            android:layout_height="65dp"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="48dp"
+                            android:src="@drawable/pizza"
+                            app:civ_border_color="#FF000000"
+                            app:civ_border_width="2dp" />
+
+                        <Button
+                            android:id="@+id/buttongopizza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp"
+                            android:layout_below="@+id/imageView2"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="80dp"
+                            android:background="@color/yellow"
+                            android:gravity="center_horizontal"
+                            android:text="pizza"
+                            app:backgroundTint="@color/yellow"
+                            app:cornerRadius="20dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:backgroundTint="@color/black">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="75dp"
+                            android:layout_height="65dp"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="48dp"
+                            android:src="@drawable/f2"
+                            app:civ_border_color="#FF000000"
+                            app:civ_border_width="2dp" />
+
+                        <Button
+                            android:id="@+id/buttonfast"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_below="@+id/imageView2"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginTop="80dp"
+                            android:background="@color/yellow"
+                            android:text="Burger"
+                            app:backgroundTint="@color/yellow"
+                            app:cornerRadius="20dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:backgroundTint="@color/black">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="75dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="48dp"
+                            android:src="@drawable/healthy"
+                            app:civ_border_color="#FF000000"
+                            app:civ_border_width="2dp" />
+
+                        <Button
+                            android:id="@+id/buttonhealthy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_below="@+id/imageView2"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginTop="80dp"
+                            android:background="@color/yellow"
+                            android:gravity="end"
+                            android:text="Healthy"
+                            app:backgroundTint="@color/yellow"
+                            app:cornerRadius="20dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:backgroundTint="@color/black">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="75dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="48dp"
+                            android:src="@drawable/drinks"
+                            app:civ_border_color="#FF000000"
+                            app:civ_border_width="2dp" />
+
+                        <Button
+                            android:id="@+id/buttondrinks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_below="@+id/imageView2"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginTop="80dp"
+                            android:background="@color/yellow"
+                            android:text="Drinks"
+                            app:backgroundTint="@color/yellow"
+                            app:cornerRadius="20dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:backgroundTint="@color/black">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageViewdessert1"
+                            android:layout_width="75dp"
+                            android:layout_height="65dp"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="48dp"
+                            android:src="@drawable/d3"
+                            app:civ_border_color="#FF000000"
+                            app:civ_border_width="2dp" />
+
+                        <Button
+                            android:id="@+id/buttondessert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_below="@+id/imageView2"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginTop="80dp"
+                            android:background="@color/yellow"
+                            android:gravity="center_horizontal"
+                            android:text="Dessert"
+                            app:backgroundTint="@color/yellow"
+                            app:cornerRadius="20dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="#2293DD"
+                android:fontFamily="@font/lemonada_semibold"
+                android:text="Today's Offers"
+                android:textColor="#F4F4F4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                 />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="#2293DD"
+                android:fontFamily="@font/lemonada_semibold"
+                android:text="Dessert"
+                android:textColor="#F4F4F4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewdessert"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@color/yellow"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:layout_marginRight="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imagelogo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="logo"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imagelogo"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Know more"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imagelogo"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Read Our Blog"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Contact Us"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="44dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_toEndOf="@+id/textk"
+                    android:layout_toRightOf="@+id/textk"
+                    android:contentDescription="location"
+                    android:src="@drawable/location"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.269" />
+
+                <ImageView
+                    android:id="@+id/phone"
+                    android:layout_width="44dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="96dp"
+                    android:layout_toEndOf="@+id/textk"
+                    android:layout_toRightOf="@+id/textk"
+                    android:contentDescription="Phone"
+                    android:src="@drawable/phone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.269" />
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_toEndOf="@+id/textk"
+                    android:layout_toRightOf="@+id/textk"
+                    android:contentDescription="text"
+                    android:src="@drawable/email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.269" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_toEndOf="@+id/phone"
+                    android:layout_toRightOf="@+id/phone"
+                    android:text="Tunis"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="96dp"
+                    android:layout_toEndOf="@+id/phone"
+                    android:layout_toRightOf="@+id/phone"
+                    android:text="12 345 678"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_toEndOf="@+id/phone"
+                    android:layout_toRightOf="@+id/phone"
+                    android:text="digital@gmail.com"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
